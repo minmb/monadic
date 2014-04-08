@@ -75,8 +75,7 @@ module Monadic
 
       # @return the default value passed
       def fetch(default=nil)
-        return self if default.nil?
-        return default
+        default
       end
       alias :_ :fetch
 
